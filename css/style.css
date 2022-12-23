@@ -1,0 +1,654 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    color: #31405b;
+}
+body, h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+a {
+    text-decoration: none;
+}
+.bg-inner {
+    background-color: #f2f8f6;
+}
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 25px;
+    border: 3px solid #18db94;
+    background-color: #18db94;
+    box-shadow: 0px 8px 20px 0px rgba(24, 219, 148, 0.35);
+
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+
+}
+.button:hover {
+    background-color: #0d9c68e3;
+}
+.button:active {
+    background-color: #0b744d;
+}
+.button-form {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.button:focus {
+    outline: none;
+    border: 3px solid #07a96e;
+    box-shadow: 0px 0px 10px 0 #08e997;
+}
+.title-medium {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #31405b;
+}
+.title-micro {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #31405b;
+}
+/*------------------------------Header------------------------------*/
+.header {
+    position: relative;
+    height: 800px;
+    padding-top: 46px;
+    background-color: #1a4f27;
+
+    background-image: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: #fff;
+}
+.logo {
+    width: 270px;
+    float: left;
+}
+.logo a {   
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    text-decoration: none;
+}
+.nav {
+    width: 870px;
+    padding-top: 13px;
+    float: right;
+    text-align: right;
+}
+.nav-link {
+    display: inline-block;
+    margin-right: 45px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+.nav-link:last-child {
+    margin-right: 0px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+.header-content {
+    position: absolute;
+    width: 1170px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.header-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+.scroll-wrapper {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.scroll-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 12px;
+    letter-spacing: 0.8px;
+}
+/*------------------------------header-inner------------------------------*/
+.header-inner {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #1a4f27;
+    background-image: url("../img/header-inner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*------------------------------// header-inner------------------------------*/
+/*------------------------------Section Content------------------------------*/
+.section-content {
+    padding: 120px 0;
+    background-color: #fff;
+}
+.content-row {
+    margin-bottom: 120px;
+}
+.content-row:last-child {
+    margin-bottom: 0;
+}
+.content-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.content-desc {
+    float: left;
+    width: 470px;
+}
+.content-img {
+    width: 570px;
+    float: right;
+}
+.content-row:nth-child(2n) .content-desc  {
+    float: right;
+}
+.content-row:nth-child(2n) .content-img {
+    float: left;
+}
+.content-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 54px;
+    font-weight: 700;
+    color: #31405b;
+}
+.content-desc p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #31405b;
+    font-weight: 400;
+}
+.text-bold {
+    font-weight: 700;
+}
+.content-text-link {
+    color: #138ece;
+}
+
+/*------------------------------section-content-inner------------------------------*/
+
+.section-content-inner {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+/*------------------------------// section-content-inner------------------------------*/
+/*------------------------------CONTACTS------------------------------*/
+.content-title--contacts {
+    margin-bottom: 45px;
+}
+.contacts-adress {
+    float: left;
+    padding-top: 25px;
+    width: 470px;
+}
+.contacts-form {
+    float: right;
+    width: 630px;
+}
+.contacts-list {
+    margin-bottom: 40px;
+    padding-left: 70px;
+    font-size: 20px;
+    color: #31405b;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.contacts-list-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+.contacts-list-item::before { 
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    left: -48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.contacts-list-item-phone a {
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #31405b;
+    transition: right 0.2s ease-out;
+}
+.contacts-list-item-phone a:hover{
+    border-bottom: 2px solid #5c81c4;
+    color: #5c81c4;
+}
+.contacts-list-item-email a {
+    text-decoration: none;
+    color: #31405b;
+}
+.contacts-list-item-email a:hover{
+    border-bottom: 2px solid #5c81c4;
+    color: #5c81c4;
+}
+.contacts-list-item-phone::before {
+    background-image: url(../img/icons/phone-solid.svg);
+}
+.contacts-list-item-email::before {
+    background-image: url(../img/icons/envelope-solid.svg);
+}
+.contacts-list-item-adress::before {
+    background-image: url(../img/icons/map-marker-alt-solid.svg);
+}
+.map-holder {
+    box-shadow: 0px 10px 20px 0px rgba(211, 211, 211, 1);
+    height: 350px;
+}
+.map-holder img {
+    display: block;
+}
+/*------------------------------// CONTACTS------------------------------*/
+/*------------------------------Form------------------------------*/
+.form {
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 20px 0px rgba(211, 211, 211, 1);
+    border-radius: 2px;
+      
+}
+.formgroup {
+    margin-bottom: 30px;
+}
+.formgroup:last-child {
+    margin-bottom: 0;
+}
+.input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+    background-color: #eeeeee;
+    border: 1px solid #c0c0c0;
+    border-radius: 6px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #31405b;
+
+}
+.input::placeholder {
+    color: rgba(49, 64, 91, 0.5);
+}
+.input:focus {
+    outline: none;
+    border: 2px solid #0ac883;
+    box-shadow: 0px 0px 10px 0 rgba(51, 148, 112, 0.5);
+}
+.form-col-50 {
+    width: 49%;
+    float: left;
+}
+.form-col-50:first-child {
+    margin-right: 5px;
+}
+.form-col-50:last-child {
+    margin-left: 5px;
+}
+.label-radio {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/*Выбор количества человек*/
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    margin-right: 15px;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.custom-radio::before {
+    content: "";
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    background-color: #2ab698;
+    border-radius: 50%;
+
+    display: none;
+}
+.real-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.real-radio:focus + .custom-radio {
+    border: 2px solid #0ac883;
+    box-shadow: 0px 0px 10px 0 rgba(51, 148, 112, 0.5);
+}
+.real-radio:checked + .custom-radio::before {
+    display: block;
+}
+/*Выбор направления*/
+.label-checkbox {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #31405b;
+}
+.label-checkbox:last-child { 
+    margin-bottom: 0;
+}
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    margin-right: 15px;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.custom-checkbox::before {
+    content: "";
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 12px;
+
+    background-image:url(../img/icons/check-solid.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    display: none;
+}
+.real-checkbox {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.real-checkbox:focus + .custom-checkbox {
+    border: 2px solid #0ac883;;
+    box-shadow: 0px 0px 10px 0 rgba(51, 148, 112, 0.5);
+}
+.real-checkbox:checked + .custom-checkbox::before {
+    display: block;
+}
+/*------------------------------// Form------------------------------*/
+/*------------------------------TOURS AND DIRECTIONS------------------------------*/
+.row + .row {
+    margin-top: 30px;
+}
+.tours-block-first {
+    display: block;
+    float: left;
+    width: 570px;
+    text-decoration: none;    
+}
+.tours-block-first:last-child {
+    float: right;
+}
+.conteiner-img-left {
+    float: left;
+    width: 670px;
+}
+.tours-block-second {
+    display: block;
+    text-decoration: none;
+}
+.indent-top {
+    margin-top: 30px;
+}
+.tours-title-medium {
+    padding-left: 30px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #fff;
+}
+.card-name-exotic {
+    float: right;
+    width: 470px;
+}
+.free-tours {
+    background-color: #a8a8a8;
+}
+.extreme-tours {
+    background-color: #c8b29b;
+}
+.adventures {
+    background-color: #1ab1c0;
+}
+.trekking {
+    background-color: #917054;
+}
+.exotic {
+    background-color:#00695d;
+}
+/*------------------------------// TOURS AND DIRECTIONS------------------------------*/
+/*------------------------------ARTICLES------------------------------*/
+.sidebar-menu {
+    float: left;
+    width: 270px;
+    padding-top: 8px;
+}
+.sidebar-menu-title {
+    margin-bottom: 28px;
+}
+.articles-content-container {
+    float: right;
+    width: 770px;
+}
+.articles-content-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.sidebar-link{
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    border-top: 1px solid#d6d9d8;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #138ece;
+}
+.sidebar-link:last-child {
+    border-bottom: 1px solid #d6d9d8;
+}
+.active {
+    font-weight: 700;
+    color: #e04e4e;
+}
+.box-img-article {
+    margin-bottom: 35px;
+}
+.articles-content-desc p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #31405b;
+    font-weight: 400;
+}
+.articles-content-desc p:first-child {
+    margin-bottom: 32px;
+}
+.articles-content-desc p:last-child {
+    margin-bottom: 0;
+}
+/*------------------------------// ARTICLES------------------------------*/
+/*------------------------------Footer------------------------------*/
+.footer {
+    width: 100%;
+	height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #265847;
+    color: #fff;
+}
+.footer-text {
+    float: left;
+    width: 270px;
+}
+.footer-logo {
+    margin-bottom: 17px;  
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+.footer-about {
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 400;
+}
+.footer-nav {
+    float: right;
+    max-width: 870px;
+}
+.footer-nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.footer-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-col{
+    margin-right: 30px;
+    font-size: 18px;
+    float: left;
+}
+.footer-col:last-child {
+    margin-right: 0;
+}
+.footer-col-info {
+    width: 200px;
+}
+.footer-col-services {
+    width: 240px;
+}
+.footer-col-contacts {
+    width: 200px;
+}
+.footer-col-contacts p {
+    margin-bottom: 13.3px;
+}
+.footer-col-contacts p:last-child {
+    margin-bottom: 0;
+}
+.footer-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer-list-item {
+    margin-bottom: 13.3px;
+}
+.footer-list-item:last-child {
+    margin-bottom: 0;
+}
+.footer-list-link {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-list-link:hover {
+    text-decoration: underline;
+}
